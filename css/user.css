@@ -1,0 +1,23 @@
+/* Login and signup forms */
+
+.account-form button {
+  width: 4rem;
+  margin-left: 80px;
+}
+
+#signup-form button {
+  width: 8rem;
+}
+
+.account-forms-container {
+  padding-left: 20px;
+}
+
+#story-form button {
+  width: 8rem;
+}
+
+.btn-delete-acount {
+  color: white;
+  background-color: rgba(177, 0, 0, 0.708);
+}

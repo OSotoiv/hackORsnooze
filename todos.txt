@@ -1,0 +1,53 @@
+TODOs::
+$navUserProfile needs event listenter to get the favorits page from the
+currentUser.favorites & currentUser.ownStories
+
+class Story
+/** Parses hostname out of URL and returns it. */
+
+  getHostName() {
+    // UNIMPLEMENTED: complete this function!
+    return "hostname.com";
+  }
+
+class StoryList
+async addStory( /* user, newStory */) {
+    // UNIMPLEMENTED: complete this function!
+    IDEAS:needs to get add story to DB and reset the stories displayed on the DOM. so go back to home
+  }
+
+You will see that stories are displayed and there is functionality to log in and create a user. 
+(Later, you’ll write the features to let users add new stories, favorite a story, and delete a story.)
+
+
+
+NOTES::
+{AuthenticationMany of the endpoints require a token to be accessed.}
+{The token can be placed either:in the query string }
+{(for GET requests, e.g. /users/test?token=eyfasf...)}
+
+{or in the request body (for POST and PATCH requests, e.g. "token": "eyfasf")}
+
+
+
+
+CODE::
+/users/username?token='YOUR_TOKEN_GOES_HERE'
+
+login from localStorage
+    const response = await axios({
+        url: `${BASE_URL}/users/${username}`,
+        method: "GET",
+        params: { token },
+signup
+    const response = await axios({
+        url: `${BASE_URL}/signup`,
+        method: "POST",
+        data: { user: { username, password, name } },
+    })
+login
+    const response = await axios({
+        url: `${BASE_URL}/login`,
+        method: "POST",
+        data: { user: { username, password } },
+    });
